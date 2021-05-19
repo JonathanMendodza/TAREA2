@@ -1,0 +1,113 @@
+/* Parte código CSS*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+}
+
+main{
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+.Formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form_label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.form_group-input{
+    position: relative;
+}
+
+.form_input{
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 30px 0 10px;
+    transition: .3s ease all;
+}
+
+.form_input:focus{
+    border: 3px solid steelblue;
+    outline: none;
+}
+
+
+.form_group_button_register{
+grid-column: span 2;
+}
+
+.form_error{
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    background-color:brown;
+    padding: 0 10px;
+    border-radius: 2px; 
+    display: none;
+}
+
+.form_error-activo{
+    display: block;
+}
+
+.form_group_button_register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_button{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.form_enviado{
+    font-size: 14px;
+    color: green;
+    display: none;
+
+}
+
+.form_enviado-activo{
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .Formulario{
+        grid-template-columns: 1fr;
+    }
+    .form_mensaje,
+    .form_group_button_register{
+    grid-column: span 1;
+    }
+    .form_button{
+        width: 100%;
+    }
+}

@@ -1,0 +1,95 @@
+<!--Parte html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea-2</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+            <center><p> <b>REGISTRO DE DATOS DE CLIENTES</b></p></center>
+        <form action="" class="Formulario" id="Formulario">
+            <!--Datos-->
+            <!--Nombre-->
+            <div class="form_group" id="group_nombre"> 
+                    <label for="nombre" class="form_label">Nombre</label>
+                    <div class="form_group-input">
+                        <input type="text" class="form_input" name="nombre" id="nombre" placeholder="Nombres">
+                    </div>
+            </div>
+            <!--Apellidos-->
+            <div class="form_group" id="group_apellido"> 
+                <label for="apellidos" class="form_label">Apellidos</label>
+                <div class="form_group-input">
+                    <input type="text" class="form_input" name="apellidos" id="apellidos" placeholder="Apellidos">
+                </div>
+             </div>
+
+            <!--Cedula-->
+            <div class="form_group" id="group_cedula"> 
+            <label for="cedula" class="form_label">Cedula</label>
+            <div class="form_group-input">
+                <input type="text" class="form_input" name="cedula" id="cedula" placeholder="CI" maxlength="10">
+            </div>
+            </div>
+
+            <!--Correo-->
+            <div class="form_group" id="group_correo"> 
+            <label for="correo" class="form_label">Correo Electronico</label>
+            <div class="form_group-input">
+                <input type="email" class="form_input" name="correo" id="correo" placeholder="Correo">
+            </div>
+            </div>
+
+            <!--fecha-->
+            <div class="form_group" id="group_fecha"> 
+            <label for="fecha" class="form_label">Fecha de Nacimiento</label>
+            <div class="form_group-input">
+                <input type="date" class="form_input" name="date-control" id="fecha">
+            </div>
+            </div>
+
+            <!--Telefono-->
+            <div class="form_group" id="group_telefono"> 
+            <label for="telefono" class="form_label">Telefono</label>
+            <div class="form_group-input">
+                <input type="text" class="form_input" name="telefono" id="telefono" placeholder="Número celular">
+            </div>
+            </div>
+
+            <!--Dirección-->
+            <div class="form_group" id="group_nombre"> 
+                <label for="direccion" class="form_label">Dirección</label>
+                <div class="form_group-input">
+                    <input type="text" class="form_input" name="direccion" id="direccion" placeholder="Dirección">
+                </div>
+            </div>
+            <!--Sexo-->
+            <div class="radio_button">
+                <p><b>Sexo</b></p>
+                <label for="sexo">Masculino</label>
+                <input type="radio" name="sexo" id="sexo">
+
+                <label for="sexo">Femenino</label>
+                <input type="radio" name="sexo" id="sexo">
+            </div>
+            <div class="form_group  form_group_button_register">
+                    
+                <p class="form_error" id="form_error"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <b>Error:</b> Formulario vacio</p>
+                <p class="form_enviado" id="form_enviado"><i class="fa fa-check" aria-hidden="true"></i> Formulario registrado</p>
+                <button type="submit" class="form_button">Registrar</button>
+            </div>
+        </form> 
+    </main>
+    <script src="valid.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
